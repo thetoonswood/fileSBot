@@ -9,3 +9,5 @@ dnspython
 aiohttp
 # --- For-Stats ------------ #
 psutil
+# --- For Speed test -----------#
+speedtest-cli
