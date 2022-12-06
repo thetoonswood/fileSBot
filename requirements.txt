@@ -11,3 +11,4 @@ aiohttp
 psutil
 # --- For Speed test -----------#
 speedtest-cli
+wget
