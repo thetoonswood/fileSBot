@@ -43,6 +43,7 @@ async def new_post(client: Client, message: Message):
     string = f"get-{converted_id}"
     base64_string = await encode(string)
     link = f"https://telegram.me/{client.username}?start={base64_string}"
+    link2 = f"https://telegram.dog/{client.username}?start={base64_string}"
     reply_markup = InlineKeyboardMarkup([
             [
                 InlineKeyboardButton(
@@ -52,6 +53,11 @@ async def new_post(client: Client, message: Message):
             [
                 InlineKeyboardButton(
                     "📥 Generated Link", url=f"{link}"
+                )
+            ],
+            [
+                InlineKeyboardButton(
+                    "📥 Generated Link - 2", url=f"{link2}"
                 )
             ]
         ]
